@@ -1,8 +1,6 @@
 # Copyright (C) 2019 Naimtechnology
 # Released under the MIT license (see COPYING.MIT for the terms)
 
-require recipes-kernel/linux/linux-imx.inc
-
 SUMMARY = "Linux Kernel for ICB board"
 DESCRIPTION = "Linux kernel for ICB board"
 
