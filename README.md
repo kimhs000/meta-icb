@@ -11,6 +11,7 @@ Naimtechnology Yocto Project for ICB
 
     sudo apt-get install curl
     sudo apt-get install bison
+    sudo apt-get install bmap-tools
 
 # How to compile & use software for ICB 
  
