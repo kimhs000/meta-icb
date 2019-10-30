@@ -41,7 +41,7 @@ Copy and paste this into your Linux host machine
      
       <remote fetch="git://github.com/kimhs000" name="kimhs000"/>
      
-      <project remote="kimhs000" revision="warrior" name="meta-icb" path="sources/meta-icb">
+      <project remote="kimhs000" revision="meta-20191030" name="meta-icb" path="sources/meta-icb">
         <copyfile src="icb-setup.sh" dest="icb-setup.sh"/>
       </project>
     </manifest>
