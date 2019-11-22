@@ -12,11 +12,11 @@ DEPENDS += "lzop-native bc-native"
 PV .= ""
 
 #SRCBRANCH = "4.9-1.0.x-mx6icb"
-SRCBRANCH = "linux4.9_191022"
+SRCBRANCH = "master"
 LOCALVERSION = "-0.0.1"
 
-SRCREV = "3a86e6a616eb4242600a922978f179bdb9410d61"
-SRC_URI = "git://github.com/kimhs000/icb-linux-4.9.git;branch=${SRCBRANCH} \
+SRCREV = "14ee47cbce6c306245f8d840914ce662958d137c"
+SRC_URI = "git://github.com/kimhs000/linux-naim.git;branch=${SRCBRANCH} \
            file://defconfig"
 
 COMPATIBLE_MACHINE = "(mx6|imx6q-icb)"
