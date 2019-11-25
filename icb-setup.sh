@@ -1,7 +1,7 @@
 #!/bin/sh
  
 LAYERS_DIR=./sources/base/conf/
-LAYER_ICB_STRING="BBLAYERS += \"\${BSPDIR}/sources/meta-icb\""
+LAYER_ICB_STRING="BBLAYERS += \"\${BSPDIR}/sources/meta-icb\ ${BSPDIR}/sources/meta-openembedded/meta-xfce \ ${BSPDIR}/sources/meta-openembedded/meta-gnome \ ${BSPDIR}/sources/meta-openembedded/meta-networking \""
  
 if [ -w ${LAYERS_DIR}/bblayers.conf ]
 then
