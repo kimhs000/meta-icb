@@ -4,19 +4,18 @@
 SUMMARY = "Linux Kernel for ICB board"
 DESCRIPTION = "Linux kernel for ICB board"
 
-# require recipes-kernel/linux/linux-imx.inc
-
 DEPENDS += "lzop-native bc-native"
 
 #PV .= "+git${SRCPV}"
 PV .= ""
 
-#SRCBRANCH = "4.9-1.0.x-mx6icb"
-SRCBRANCH = "master"
+CVE_VERSION = "${KERNEL_VERSION}"
+
+SRCBRANCH = "linux-4.9-1.0.x"
 LOCALVERSION = "-0.0.1"
 
-SRCREV = "14ee47cbce6c306245f8d840914ce662958d137c"
-SRC_URI = "git://github.com/kimhs000/linux-naim.git;branch=${SRCBRANCH} \
+SRCREV = "f587c3f066584483af5b8d8f881e1d53c3922988"
+SRC_URI = "git://github.com/kimhs000/linux-icb.git;branch=${SRCBRANCH} \
            file://defconfig"
 
 COMPATIBLE_MACHINE = "(mx6|imx6q-icb)"

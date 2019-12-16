@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=IR Camera Video Test
+Comment=Launches gst-launch to show ircamera input on screen.
+Exec=/usr/bin/ircamera-test
+Icon=video-player 
+Terminal=true
+Type=Application  
+StartupNotify=true
+Categories=GTK;AudioVideo;Audio;Player;
+Name[en_US]=IR-Camera-Test

@@ -13,9 +13,9 @@ PROVIDES += "u-boot"
 
 PV = "v2019.07+git${SRCPV}"
 
-SRCBRANCH = "pyro_191021"
-SRC_URI = "git://github.com/kimhs000/icb-uboot-v2019.07.git;branch=${SRCBRANCH}"
-SRCREV = "83494b9b57d22e16070a9f76eb0303f56682e24b"
+SRCBRANCH = "u-boot-icb-v2019.07"
+SRC_URI = "git://github.com/kimhs000/u-boot-icb.git;branch=${SRCBRANCH}"
+SRCREV = "aa408370c9c84c756ea2a148cc57576f6f07cb39"
 
 S = "${WORKDIR}/git"
 
