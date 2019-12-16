@@ -61,27 +61,27 @@ Here is a list of 'machine names' which you can use to build ICB images. Use the
      
 ### Setup and Build Console image
     MACHINE=<machine name> DISTRO=<distro name> source setup-environment build-icb
-    bitbake core-image-base
+    bitbake icb-sato-demo
  
 Example:
  
  
     MACHINE=imx6q-icb DISTRO=fslc-x11 source setup-environment build-icb
-    bitbake core-image-base
+    bitbake icb-sato-demo
  
 ### Setup and Build Toolchain    
     MACHINE=<machine name> bitbake core-image-base -c populate_sdk
      
 ### Setup and Build FSL GUI image
     MACHINE=<machine name> source fsl-setup-release.sh -b build-x11 -e x11
-    MACHINE=<machine name> bitbake fsl-image-gui
+    MACHINE=<machine name> bitbake core-image-sato
  
 # Creating SD card
-Output directories and file names depend on what you build. Following example is based on running 'bitbake core-image-base':
+Output directories and file names depend on what you build. Following example is based on running 'bitbake icb-sato-demo':
  
  
     umount /dev/sdb?
-    sudo bmaptool copy --nobmap tmp/deploy/images/imx6qdlicb/core-image-base-imx6qdlicb.wic.gz /dev/sdb
+    sudo bmaptool copy --nobmap tmp/deploy/images/imx6q-icb/icb-sato-demo-imx6q-icb.wic.gz /dev/sdb
 
      
 # Testing it on icb (initial uBoot runs from SPI)

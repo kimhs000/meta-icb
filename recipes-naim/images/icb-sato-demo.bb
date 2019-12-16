@@ -13,3 +13,12 @@ TOOLCHAIN_HOST_TASK_remove_task-populate-sdk-ext = " nativesdk-intltool nativesd
 
 QB_MEM = '${@bb.utils.contains("DISTRO_FEATURES", "opengl", "-m 512", "-m 256", d)}'
 QB_MEM_qemumips = "-m 256"
+
+CORE_IMAGE_BASE_INSTALL += "\
+				minicom \
+				git \
+"
+
+CORE_IMAGE_BASE_INSTALL_append_imx6q-icb += "video-input-icon"
+
+export IMAGE_BASENAME = "naim-image-sato"
